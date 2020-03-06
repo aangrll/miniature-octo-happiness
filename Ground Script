@@ -1,0 +1,6 @@
+Collider2D[] colliders = Physics2D.OverlapCircleAll (groundCheck.position, groundradius, whatsIsGround);
+     for (int i = 0; i < colliders.Length; i++) 
+     {
+         if(colliders[i].gameObject != gameObject)
+             grounded = true;
+     }
